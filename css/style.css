@@ -6,6 +6,7 @@
 
 p{
     font-size: 0.9em;
+    line-height: 1.5;
 }
 
 
@@ -64,7 +65,7 @@ li a i{
 }
 
 .content-about{
-    padding: 40px 0;
+    padding: 10% 0;
     background-color: #dfe1e6;
 }
 
@@ -106,7 +107,8 @@ li a i{
     width: 100%;
     font-size: 16px;
     line-height: 3;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
+    padding-top: 1em;
 }
 
 .content-header-hireme{
@@ -164,7 +166,7 @@ li a i{
     width: 100%;
     font-size: 16px;
     text-align: justify;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 .content-text-skills{
@@ -203,4 +205,90 @@ li a i{
     padding-top: 5%;
     width: 100%;
     font-size: 16px;
+}
+
+.timeline{
+    display: flex;
+}
+
+.line{
+    padding-left: 3%;
+    box-sizing: border-box;
+    border-left: 2px solid #FF4C60;
+}
+
+.timeline2{
+    width: 90%;
+}
+
+.content-text-description-all-project{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-text-description-each-project{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 60%;
+}
+
+.content-all-project{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.padding-icon{
+    padding: 0 10px;
+}
+
+.content-project-img{
+    height: 100%;
+    max-width: 100%;
+    transition: all 2s;
+    background: rgba(0,0,0,0.8);
+}
+
+.content-project-img:hover{
+    transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    transition: all 2s;
+}
+
+.content-all-blog{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content-blog-img{
+    width: 200px;
+    height: 70%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+    box-shadow: 2px 0px 2px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content-blog-info{
+    text-align: left;
+    padding: 5%;
+    height: 200px;
+}
+
+.hidden{
+    display: none;
 }

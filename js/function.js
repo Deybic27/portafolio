@@ -25,31 +25,35 @@ $(document).ready(function() {
     }, 3000);
     
     var hide = 4;
-    var hidep = 3;
+    var show = 1;
+
+    var hidep,showp;
 
     $("a#next").click(function(event) {
         event.preventDefault();
-        var show = hide-3;
-        console.log(hide+' '+show);
-        if ($("#post"+hide).is(':hidden')) {
+        if ($("#post"+hide).is(':hidden') && hide<=7) {
             $("#post"+show).hide("slow");
             $("#post"+hide).show(2000);
-            hidep=hide-hidep;
-            hide+=1;
-            console.log(hidep);
-        }else{
-            hide-=3;
+            hidep=hide;
+            showp=show;
+            if (hide<=6) {
+                hide+=1;
+                show+=1;
+                console.log(hide+' '+show);
+            }            
         }
     });
 
     $("a#previous").click(function(event) {
         event.preventDefault();
-        var show = hidep-3;
-        console.log(hidep+' '+show);
-        if ($("#post"+hidep).is(':hidden')) {
-            $("#post"+show).hide("slow");
-            $("#post"+hidep).show(2000);
-            hidep+=1;
+        if ($("#post"+showp).is(':hidden') && hidep<=7) {
+            $("#post"+hidep).hide("slow");
+            $("#post"+showp).show(2000);
+            hide=hidep;
+            show=showp;
+            hidep-=1;
+            showp-=1;
+            console.log(hidep+' '+showp);
         }
     });
 });

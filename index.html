@@ -249,7 +249,7 @@
 										</div>
 										<div class="content-blog-info">
 											<p><b>¿Qué es JAVASCRIPT?</b></p>
-											<p>14 Enero 2021 </p>
+											<p>14 Enero 2022</p>
 											<p>Admin</p>
 										</div>
 									</div>
@@ -259,7 +259,7 @@
 										</div>
 										<div class="content-blog-info">
 											<p><b>¿Qué es JQUERY?</b></p>
-											<p>14 Enero 2021 </p>
+											<p>14 Febrero 2022 </p>
 											<p>Admin</p>
 										</div>
 									</div>
@@ -268,8 +268,18 @@
 											<img src="img/student.png" alt="" class="content-project-img">
 										</div>
 										<div class="content-blog-info">
-											<p><b>¿Qué es JQUERY?</b></p>
-											<p>14 Enero 2021 </p>
+											<p><b>¿Qué es LARAVEL?</b></p>
+											<p>14 Marzo 2022 </p>
+											<p>Admin</p>
+										</div>
+									</div>
+									<div id="post7" class="content-all-blog hidden">
+										<div class="content-blog-img">
+											<img src="img/student.png" alt="" class="content-project-img">
+										</div>
+										<div class="content-blog-info">
+											<p><b>¿Qué es PHP?</b></p>
+											<p>14 Abril 2022 </p>
 											<p>Admin</p>
 										</div>
 									</div>

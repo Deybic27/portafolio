@@ -4,7 +4,6 @@ function rotatingText(val){
         const element = val[index];
         if(element == valSpan){
             cont = index+1;
-            console.log(cont);
             if (val[cont]) {
                 $('span.content-rotating-text').text(val[cont]);
                 break;
@@ -55,6 +54,35 @@ $(document).ready(function() {
             showp-=1;
             console.log(hidep+' '+showp);
         }
+    });
+
+    
+    $("a#show-menu").click(function(event) {
+        event.preventDefault();
+        if ($("header.desktop-header.close.show-menu-desktop").length) {
+            $("header.desktop-header").removeClass("show-menu-desktop");
+            $("header.mobile-header").removeClass("show-menu-mobile");
+            $("main").removeClass("show-main");
+            console.log("si sirvce");
+        }else if($("header.desktop-header.close").length){
+            $("header.desktop-header").addClass("show-menu-desktop");
+            $("header.mobile-header").addClass("show-menu-mobile");
+            $("main").addClass("show-main");
+            console.log("no sirvce");
+        }
+        
+    });
+
+    $("a#hide-menu").click(function(event) {
+        event.preventDefault();
+        $("header.desktop-header").addClass("hide-menu");
+        $("header.mobile-header").addClass("show-menu");
+        $("main").addClass("hide-menu");
+        $("a#hide-menu").prev("li").show(function() {
+            this.id="newid";
+        });
+        console.log("si sirvce");
+
     });
 });
 

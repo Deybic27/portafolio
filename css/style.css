@@ -9,11 +9,41 @@ p{
     line-height: 1.5;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
-header{
+.mobile-header{
+    background-color: #032C69;
+    transform: translateX(-100%);
+    display: flex;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    padding: 10px 40px 40px;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #dfe1e6;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.mobile-header-content{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-header-content div{
+    padding-right: 10%;
+}
+
+.desktop-header{
     display: flex;
     background-color: #032C69;
     width: 290px;
+    transition: width;
     height: 100vh;
     left: 0;
     top: 0;
@@ -24,6 +54,15 @@ header{
     flex-direction: column;
     color: #dfe1e6;
     box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.logo{
+    width: 100%;
+}
+
+.content-logo{
+    width: 100%;
 }
 
 nav{
@@ -48,6 +87,7 @@ nav ul li{
 a{
     text-decoration: none;
     color: #dfe1e6;
+    transition: all 2s;
 }
 
 li a i{
@@ -105,11 +145,33 @@ li a i{
 
 .content-header-text{
     width: 100%;
+    height: 23px;
     font-size: 16px;
     line-height: 3;
     padding-bottom: 2em;
     padding-top: 1em;
 }
+
+.rotating{
+    opacity: 0;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0%   {font-size: 17px; opacity: 0%;}
+    15%  {font-size: 16px; opacity: 50%;}
+    20%  {font-size: 17px; opacity: 100%;}
+    35%  {font-size: 16px;}
+    400% {font-size: 17px;}
+    5%   {font-size: 17px;}
+    65%  {font-size: 16px;}
+    70%  {font-size: 17px;}
+    85%  {font-size: 16px; opacity: 100%;}
+    90% {font-size: 17px; opacity: 50%;}
+    100% {font-size: 17px; opacity: 0;}
+  }
 
 .content-header-hireme{
     width: 100%;
@@ -291,4 +353,84 @@ li a i{
 
 .hidden{
     display: none;
+}
+
+.item1 { grid-area: name;}
+.item2 { grid-area: email; }
+.item3 { grid-area: subject; }
+.item4 { grid-area: message; }
+.item5 { grid-area: submit; }
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'name name name email email email'
+    'subject subject subject subject subject subject'
+    'message message message message message message'
+    'submit submit submit submit submit submit';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 2% 0;
+    font-size: 30px;
+}
+
+input, textarea{
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border: 0;
+    color: #5e5c7f;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+    border-color: rgb(5, 5, 5);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(5, 5, 5, 0.6);
+    outline: 0 none;
+}
+
+@media (max-width: 770px) {
+    .content-about{
+        padding: 20% 0;
+    }
+    .close{
+        font-size: 14px;
+        transform: translate(-292px);
+        transition: all 1s;
+    }
+    
+    .close1{
+        margin-left: 0;
+        transition: all 1s;
+    }
+
+    .content-text-description{
+        width: 80%;
+    }
+
+    .mobile-header{
+        transform: translateX(0);
+        z-index: 3;
+    }
+
+    .show-menu-mobile{
+        margin-left: 200px;
+    }
+
+    .show-menu-desktop{
+        transform: translateX(0);
+        width: 200px;
+        transition: all 1s;
+    }
+
+    .show-main{
+        margin-left: 200px;
+    }
 }

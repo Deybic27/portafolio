@@ -11,10 +11,23 @@
 </head>
 <body>
 
+	<header class="mobile-header">
+		<div class="mobile-header-content">
+			<!-- menu icon -->
+			<div>
+				<a id="show-menu"><i class="fas fa-bars"></i></a>
+			</div>
+			<!-- logo image -->
+			<div class="logo">
+				<h1 class="content-logo">Codered</h1>
+			</div>
+		</div>
+	</header>
+
 	<!-- desktop header -->
-	<header>
-		<div>
-			<img src="img/logo.svg" alt="">
+	<header class="desktop-header close">
+		<div class="logo">
+			<h1 class="content-logo">Codered</h1>
 		</div>
 		<nav>
 			<ul>
@@ -29,8 +42,10 @@
 	</header>
 
 	<!-- main layout -->
-	<main class="container">
+	<main class="container close1">
 		<div>
+
+			<!-- Header -->
 			<section id="home" class="content-header">
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
@@ -41,8 +56,7 @@
 							<h2>Deybic Rojas</h2>
 						</div>
 						<div class="content-header-text">
-							<p>Yo soy <span class="content-rotating-text">Desarrollador Web,Desarrollador PHP,Desarrollador Backend, Desarrollador Laravel</span></p>
-							
+							<p>Yo soy <span class="content-rotating-text rotating">Desarrollador Web,Desarrollador PHP,Desarrollador Backend, Desarrollador Laravel</span></p>
 						</div>
 						<div class="content-header-hireme">
 							<a href="#contact" class="btn btn-default">Contrátame</a>
@@ -50,6 +64,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- About -->
 			<section id="about" class="content-about">
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
@@ -120,13 +135,14 @@
 									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #ffd15c;"></div>
 								</div>
 								<div class="content-skill-download-cv">
-									<a href="#contact" class="btn btn-default">Descargar CV</a>
+									<a href="" class="btn btn-default">Descargar CV</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<!-- Experiencie -->
 			<section id="experience" class="content-about">
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
@@ -165,6 +181,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Project -->
 			<section id="project" class="content-about">
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
@@ -202,6 +219,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Blog -->
 			<section id="blog" class="content-about">
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
@@ -287,6 +305,33 @@
 										<a id="previous" href="" class="btn btn-default"><i class="fas fa-chevron-circle-left"></i></a>
 										<a id="next" href="" class="btn btn-default"><i class="fas fa-chevron-circle-right"></i></a>
 									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Contact -->
+			<section id="contact" class="content-about">
+				<div class="content-header-all-rows">
+					<div class="content-header-each-rows">
+						<div class="content-title">
+							<div class="content-title-descripcion">
+								<h2>Contáctame</h2>
+							</div>
+						</div>
+						<div class="content-text">
+							<div class="content-text-description-all-project">
+								<div class="content-text-description-each-project">
+									<form action=""></form>
+										<div class="grid-container">
+											<div class="item1"><input type="text" placeholder="Nombre"></div>
+											<div class="item2"><input type="text" placeholder="Email"></div>
+											<div class="item3"><input type="text" placeholder="Asunto"></div>
+											<div class="item4"><textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></div>
+											<div class="item5"><button type="submit" class="btn btn-default">Enviar mensaje</button></div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>

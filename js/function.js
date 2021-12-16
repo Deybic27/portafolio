@@ -72,17 +72,5 @@ $(document).ready(function() {
         }
         
     });
-
-    $("a#hide-menu").click(function(event) {
-        event.preventDefault();
-        $("header.desktop-header").addClass("hide-menu");
-        $("header.mobile-header").addClass("show-menu");
-        $("main").addClass("hide-menu");
-        $("a#hide-menu").prev("li").show(function() {
-            this.id="newid";
-        });
-        console.log("si sirvce");
-
-    });
 });
 

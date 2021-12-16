@@ -13,16 +13,17 @@ html{
     scroll-behavior: smooth;
 }
 
+/*HEADER AND MENU*/
 .mobile-header{
     background-color: #032C69;
     transform: translateX(-100%);
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 5%;
     left: 0;
     top: 0;
     position: fixed;
-    padding: 10px 40px 40px;
+    padding: 23px;
     align-items: flex-start;
     flex-direction: column;
     color: #dfe1e6;
@@ -33,6 +34,7 @@ html{
 .mobile-header-content{
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .mobile-header-content div{
@@ -390,10 +392,49 @@ input, textarea{
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus, button:hover{
     border-color: rgb(5, 5, 5);
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(5, 5, 5, 0.6);
     outline: 0 none;
+}
+
+.content-return{
+    height: 50px;
+    width: 50px;
+    bottom: 0;
+    right: 0;
+    padding: 2%;
+    position: fixed;
+}
+
+.content-return-text{
+    height: 100%;
+    width: 100%;
+    background-color: #FF4C60;
+    border: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-return-icon{
+    height: 80%;
+    width: 80%;
+    background-color: #dfe1e6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.content-return-icon-door{
+    height: 50%;
+    width: 30%;
+    background-color: #FF4C60;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 @media (max-width: 770px) {
@@ -404,6 +445,7 @@ input:focus, textarea:focus{
         font-size: 14px;
         transform: translate(-292px);
         transition: all 1s;
+        z-index: 1;
     }
     
     .close1{
@@ -417,7 +459,7 @@ input:focus, textarea:focus{
 
     .mobile-header{
         transform: translateX(0);
-        z-index: 3;
+        z-index: 10;
     }
 
     .show-menu-mobile{
@@ -431,6 +473,6 @@ input:focus, textarea:focus{
     }
 
     .show-main{
-        margin-left: 200px;
+        z-index: 1;
     }
 }

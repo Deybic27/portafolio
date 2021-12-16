@@ -63,14 +63,11 @@ $(document).ready(function() {
             $("header.desktop-header").removeClass("show-menu-desktop");
             $("header.mobile-header").removeClass("show-menu-mobile");
             $("main").removeClass("show-main");
-            console.log("si sirvce");
         }else if($("header.desktop-header.close").length){
             $("header.desktop-header").addClass("show-menu-desktop");
             $("header.mobile-header").addClass("show-menu-mobile");
             $("main").addClass("show-main");
-            console.log("no sirvce");
         }
-        
     });
 });
 

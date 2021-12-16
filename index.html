@@ -338,15 +338,17 @@
 					</div>
 				</div>
 			</section>
-			<div class="content-return">
-				<div class="content-return-text">
-					<div class="content-return-icon">
-						<div class="content-return-icon-door">
+			<a href="#home">
+				<div class="content-return">
+					<div class="content-return-text">
+						<div class="content-return-icon">
+							<div class="content-return-icon-door">
 
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</a>
 		</div>
 	</main>
 </body>

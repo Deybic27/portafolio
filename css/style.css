@@ -138,6 +138,12 @@ li a i{
     padding-bottom: 1em;
 }
 
+.img-perfil{
+    height: 108px;
+    width: 108px;
+    border-radius: 50%;
+}
+
 .content-header-title{
     width: 100%;
     text-align: center;

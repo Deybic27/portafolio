@@ -50,7 +50,7 @@
 				<div class="content-header-all-rows">
 					<div class="content-header-each-rows">
 						<div class="content-header-image">
-							<img src="img/avatar-1.svg" alt="">
+							<img class="img-perfil" src="img/imgPerfil.jpg" alt="">
 						</div>
 						<div class="content-header-title">
 							<h2>Deybic Rojas</h2>

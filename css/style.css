@@ -186,11 +186,6 @@ li a i{
     font-size: 16px;
 }
 
-.btn-default{
-    color: #dfe1e6;
-    background: #FF4C60;
-}
-
 .btn{
     border-radius: 60px;
     font-family: "Rubik", sans-serif;
@@ -199,6 +194,16 @@ li a i{
     overflow: hidden;
     line-height: 1.7;
     padding: 12px 32px;
+}
+
+.btn-default{
+    color: #dfe1e6;
+    background: #FF4C60;
+}
+
+.btn-demo{
+    padding: 0px 20px;
+    border: 0px;
 }
 
 .content-title{
@@ -291,6 +296,8 @@ li a i{
     width: 90%;
 }
 
+/*PROJECT*/
+
 .content-text-description-all-project{
     display: flex;
     justify-content: center;
@@ -313,6 +320,7 @@ li a i{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     cursor: pointer;
+    position: relative;
 }
 
 .padding-icon{
@@ -326,12 +334,51 @@ li a i{
     background: rgba(0,0,0,0.8);
 }
 
-.content-project-img:hover{
+.content-img{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -3;
+    transform: translateY(-100%);
+    transition: transform 1s;
+    color: transparent;
+    padding: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img p{
+    padding: 10% 0;
+    box-sizing: border-box;
+}
+
+.link-project{
+    width: 100%;
+    height: 100%;
+}
+
+.link-project:hover .content-img{
+    z-index: 0;
+    transform: translateY(0);
+    color: white;
+    transition: transform 1s, color 2s;
+}
+
+
+
+.link-project:hover .content-project-img{
     transform: scale(2, 2);
     -ms-transform: scale(2, 2);
     -webkit-transform: scale(2, 2);
     transition: all 2s;
 }
+
+/*END PROJECT*/
 
 .content-all-blog{
     width: 200px;

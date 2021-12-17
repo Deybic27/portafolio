@@ -97,7 +97,7 @@
 									<div class="content-text-skills-cant">95%</div>
 								</div>
 								<div class="content-text-skills-progress">
-									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #ffd15c;"></div>
+									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #FF4C60;"></div>
 								</div>
 								<div class="content-text-skills">
 									<div class="content-text-skill">JAVASCRIPT</div>
@@ -111,7 +111,7 @@
 									<div class="content-text-skills-cant">95%</div>
 								</div>
 								<div class="content-text-skills-progress">
-									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #ffd15c;"></div>
+									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #FF4C60;"></div>
 								</div>
 								<div class="content-text-skills">
 									<div class="content-text-skill">LARAVEL</div>
@@ -125,7 +125,7 @@
 									<div class="content-text-skills-cant">95%</div>
 								</div>
 								<div class="content-text-skills-progress">
-									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #ffd15c;"></div>
+									<div class="content-text-skills-progress-bar" style="width: 95%; background-color: #FF4C60;"></div>
 								</div>
 								<div class="content-text-skills">
 									<div class="content-text-skill">Structured Query Language (SQL)</div>
@@ -194,24 +194,66 @@
 							<div class="content-text-description-all-project">
 								<div class="content-text-description-each-project">
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 							
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 							
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 									<div class="content-all-project">
-										<img src="img/student.png" alt="" class="content-project-img">
+										<a class="link-project" href="">
+											<img src="img/student.png" alt="" class="content-project-img">
+											<div class="content-img">
+												<h1>Nombre proyecto</h1>
+												<p>Descripcion del proyecto</p>
+												<button class="btn btn-default btn-demo">Ver demo</button>
+											</div>
+										</a>
 									</div>
 								</div>
 							</div>

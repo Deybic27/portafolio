@@ -194,6 +194,7 @@ li a i{
     overflow: hidden;
     line-height: 1.7;
     padding: 12px 32px;
+    cursor: pointer;
 }
 
 .btn-default{
@@ -344,16 +345,16 @@ li a i{
     transform: translateY(-100%);
     transition: transform 1s;
     color: transparent;
-    padding: 10%;
+    padding: 0 5%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .content-img p{
-    padding: 10% 0;
+    padding: 0 0;
     box-sizing: border-box;
 }
 
